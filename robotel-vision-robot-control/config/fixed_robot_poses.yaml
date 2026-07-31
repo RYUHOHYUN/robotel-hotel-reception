@@ -1,0 +1,28 @@
+# Documentation/reference coordinates copied from the provided source snapshot.
+# Units and coordinate conventions follow the Doosan code used in the project.
+# Re-teach every pose before using another robot or workspace.
+
+event_prize_delivery:
+  initial:
+    joint: [0.022, -0.044, 90.028, 0.003, 89.995, 0.011]
+    tcp: [367.449, 7.678, 192.104, 60.196, 179.958, 60.032]
+  product_front:
+    joint: [-56.474, 30.784, 107.594, -62.144, 112.635, -129.788]
+    tcp: [-96.437, -364.13, 212.352, 178.354, 90.036, 86.129]
+  product:
+    joint: [-63.947, 27.988, 113.419, -66.882, 107.393, -129.293]
+    tcp: [-161.352, -360.457, 209.142, 177.558, 90.112, 85.687]
+  pull_out:
+    tcp: [-96.437, -364.13, 212.352, 178.354, 90.036, 86.129]
+  basket_top:
+    tcp: [585.44, 200.53, 338.79, 164.39, -176.62, -106.18]
+  basket_bottom:
+    tcp: [585.44, 200.53, 188.79, 164.39, -176.62, -106.18]
+
+passport_motion:
+  initial_detection_joint: [0.0, 10.0, 90.0, 0.0, 0.0, 90.0]
+  passport_detection_joint: [0.0, 0.0, 90.0, 0.0, 65.0, 90.0]
+  after_grip_joint: [-17.42, 17.69, 56.29, 1.61, 99.80, 18.19]
+  tray_above_tcp: [514.660, -4.010, 250.390, 19.57, -171.91, -159.3]
+  tray_insert_tcp: [514.660, -4.010, 150.390, 19.57, -171.91, -159.3]
+  grasp_orientation: [0.0, 155.0, 0.0]

@@ -1,0 +1,25 @@
+# Ubuntu 22.04 / Python 3.10 호환 버전
+#
+# cv2.__version__은 4.10.0으로 표시되며,
+# PyPI 패키지의 정확한 배포 버전은 4.10.0.84입니다.
+#
+# 중요:
+# - opencv-python / opencv-python-headless와 함께 설치하지 마세요.
+# - MediaPipe가 필요한 contrib 모듈까지 포함하기 위해
+#   opencv-contrib-python 하나만 설치합니다.
+
+numpy==1.24.4
+opencv-contrib-python==4.10.0.84
+mediapipe==0.10.35
+matplotlib==3.7.5
+
+# RG2 코드가 pymodbus.client.sync API를 사용하므로 유지합니다.
+pymodbus==2.5.3
+
+# pytesseract는 체크아웃 카드번호 등 기존 기능에서 계속 사용합니다.
+# 이벤트 등수 판정에는 더 이상 사용하지 않습니다.
+pytesseract==0.3.13
+
+# 이벤트 등수 판정 필수 엔진: PaddleOCR PP-OCRv5
+# GPU/CPU용 PaddlePaddle 패키지는 장비 CUDA 환경에 맞는 버전을 설치해야 합니다.
+paddleocr>=3.0,<4.0
