@@ -1,8 +1,0 @@
-string passport_photo_path
----
-bool success
-bool liveness_passed
-bool verified
-float32 similarity
-string message
-string live_photo_path
