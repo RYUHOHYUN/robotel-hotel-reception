@@ -1,0 +1,6 @@
+# Python packages only. ROS 2 packages are installed separately.
+numpy==1.24.4
+opencv-contrib-python==4.10.0.84
+paddleocr
+paddlepaddle
+pymodbus==2.5.3
